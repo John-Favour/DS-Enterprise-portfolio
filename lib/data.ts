@@ -9,7 +9,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/favour-john-ai",
   twitter: "https://x.com/_DsEnterprise",
   twitterHandle: "@_DsEnterprise",
-  domain: "favour-aibangbee.netlify.app",
+domain: "ds-enterprise.netlify.app",
 };
 
 export const skills = [

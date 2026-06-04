@@ -15,17 +15,34 @@ export const metadata: Metadata = {
   description:
     "Fullstack and Backend Engineer with 2+ years experience building production-grade web applications. MERN Stack, Next.js, Node.js, REST APIs, PostgreSQL, MongoDB. Open to remote roles worldwide.",
   keywords: [
-    "fullstack developer", "backend engineer", "frontend developer",
-    "mern stack developer", "next.js developer", "react developer",
-    "node.js developer", "rest api developer", "saas developer",
-    "fullstack developer nigeria", "remote developer nigeria",
-    "frontend developer benin city", "hire fullstack developer",
-    "freelance web developer nigeria", "freelance react developer",
-    "javascript developer", "typescript developer", "go developer",
-    "postgresql developer", "mongodb developer", "express.js developer",
-    "hire remote developer", "open to remote", "software engineer nigeria",
-    "favour aibangbee", "john favour developer",
-    "web application developer", "payment integration developer",
+    "fullstack developer",
+    "backend engineer",
+    "frontend developer",
+    "mern stack developer",
+    "next.js developer",
+    "react developer",
+    "node.js developer",
+    "rest api developer",
+    "saas developer",
+    "fullstack developer nigeria",
+    "remote developer nigeria",
+    "frontend developer benin city",
+    "hire fullstack developer",
+    "freelance web developer nigeria",
+    "freelance react developer",
+    "javascript developer",
+    "typescript developer",
+    "go developer",
+    "postgresql developer",
+    "mongodb developer",
+    "express.js developer",
+    "hire remote developer",
+    "open to remote",
+    "software engineer nigeria",
+    "favour aibangbee",
+    "john favour developer",
+    "web application developer",
+    "payment integration developer",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.github }],
   creator: siteConfig.name,
@@ -45,6 +62,10 @@ export const metadata: Metadata = {
     creator: siteConfig.twitterHandle,
   },
   robots: { index: true, follow: true },
+
+  verification: {
+    google: "0i8upa60Dc36lSNUUMTqeNHCZYBwAuuws4tN0ZACYUE", // paste your full code here
+  },
 };
 
 const jsonLd = {
@@ -56,15 +77,34 @@ const jsonLd = {
   email: siteConfig.email,
   sameAs: [siteConfig.github, siteConfig.linkedin, siteConfig.twitter],
   knowsAbout: [
-    "JavaScript", "TypeScript", "React.js", "Next.js", "Node.js",
-    "Express.js", "MongoDB", "PostgreSQL", "REST API", "Go",
-    "Tailwind CSS", "Fullstack Development", "Backend Engineering",
-    "SaaS Development", "Payment Integration",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "REST API",
+    "Go",
+    "Tailwind CSS",
+    "Fullstack Development",
+    "Backend Engineering",
+    "SaaS Development",
+    "Payment Integration",
   ],
-  address: { "@type": "PostalAddress", addressLocality: "Benin City", addressCountry: "Nigeria" },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Benin City",
+    addressCountry: "Nigeria",
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
